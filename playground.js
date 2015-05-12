@@ -99,3 +99,92 @@ console.log ( test );
 console.info ( test );
 console.warn ( test );
 console.error ( test );
+
+
+
+// ------------------
+// LOOPS
+// ------------------
+
+// WHILE LOOP
+
+while ( checkCondition ) {
+    // do something;
+    // incrementIndex;
+}
+
+// WHILE LOOP EXAMPLE
+
+var myNumber = 1;
+
+while ( myNumber < 10 ) {
+    console.log( myNumber );
+    myNumber++;
+}
+
+
+// DO WHILE LOOP
+
+do {
+    // do something ;
+    // incrementIndex
+} while ( checkCondition );
+
+// DO WHILE LOOP EXAMPLE
+
+myNumber = 1;
+
+do {
+    console.log ( myNumber );
+    myNumber++;
+} while ( myNumber < 10 );
+
+
+// FOR LOOP
+
+for ( setIndex; checkCondition; incrementIndex ) {
+    // do something
+}
+
+// FOR LOOP EXAMPLE
+
+for ( myNumber = 1; myNumber < 10; myNumber++ ) {
+    console.log ( myNumber );
+    myNumber++;
+}
+
+
+// BREAK WILL EXIT THE LOOP
+
+for ( myNumber = 1; myNumber < 10; myNumber++ ) {
+    console.log ( myNumber );
+    myNumber++;
+    if ( myNumber == 5 ) {
+        // EXIT THE LOOP
+        break;
+    } else {
+        // CONTINUE
+    }
+}
+
+
+// CONTINUE WILL SKIP OVER THIS ITERATION
+
+for ( myNumber = 1; myNumber < 10; myNumber++ ) {
+    if ( myNumber == 5 ) {
+        // SKIP THIS ITERATION
+        continue;
+    } else {
+        // CONTINUE
+        console.log ( myNumber );
+        myNumber++;
+    }
+}
+
+
+
+
+
+
+
+
