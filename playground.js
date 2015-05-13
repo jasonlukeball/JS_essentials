@@ -1,3 +1,10 @@
+// -------------------------------------------------------------------
+// JAVASCRIPT REFERENCE
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference
+// -------------------------------------------------------------------
+
+
+
 // ------------------
 // VARIABLES
 // ------------------
@@ -180,6 +187,150 @@ for ( myNumber = 1; myNumber < 10; myNumber++ ) {
         myNumber++;
     }
 }
+
+
+// ------------------
+// ARRAYS
+// ------------------
+
+// DEFINE AN EMPTY ARRAY (METHOD 1)
+var multipleValues = [];
+// DEFINE AN EMPTY ARRAY (METHOD 2)
+var multipleValues2 = new Array();
+// DEFINE AN EMPTY ARRAY (METHOD 3)
+var multipleValues3 = Array();
+
+// DEFINE AN ARRAY WITH 5 SLOTS (I WILL PROBABLY NEVER USE THIS)
+var multipleValues4 = Array(5);
+
+
+// USE INDEX TO ASSIGN VALUES TO THE ARRAY
+
+multipleValues[0] = 50;
+multipleValues[1] = 60;
+multipleValues[2] = "String";
+
+console.log (multipleValues[2]);
+
+
+// LOAD MULTIPLE VALUES INTO AN ARRAY
+var anotherArrray = [50, 60, "String"];
+
+
+// COUNT VALUES IN AN ARRAY
+var lengthOfArray = multipleValues.length;
+console.log(lengthOfArray);
+
+
+// ------------------
+// ARRAY METHODS
+// ------------------
+
+// someObject.someMethod();
+
+var myArray = [10,20,30];
+
+// REVERSE THE ORDER OF THE ARRAY
+console.log(myArray.reverse);
+
+// OUTPUT ALL VALUES IN ARRAY AS A SINGLE STRING
+console.log(myArray.join);
+
+// SORT ARRAY
+console.log(myArray.sort);
+
+
+
+// --------------------
+// NUMBERS
+// --------------------
+
+// JAVASCRIPT IS NOT TIGHTLY TYPE CAST
+// ALL NUMBERS ARE STORED AS FLOATS
+
+
+var foo = 5;
+var bar = "something";
+console.log ( foo * bar);
+// THIS MAKES NO SENSE AND JAVASCRIPT WILL GIVE US NaN (NOT A NUMBER)
+
+foo = 5;
+bar = "5";
+console.log ( foo + bar);
+// THIS WILL GIVE 55
+// IF ANY VARIABLE IS A STRING, JAVASCRIPT TREATS THIS AS CONCATENATION
+
+foo = 5;
+bar = "5";
+console.log ( foo + Number(bar));
+// USE THE "NUMBER" FUNCTION TO CAST THE STRING "5" AS A NUMBER
+// OUTPUTS 10
+
+foo = 5;
+bar = 5;
+console.log ( foo + String(bar));
+// USE THE "STRING" FUNCTION TO CAST THE STRING "5" AS A NUMBER
+// OUTPUTS 55
+
+
+// ROUND
+var number = 200.6;
+Math.round(number);
+
+// MAX
+Math.max(10,20,30);
+
+// MIN
+Math.min(10,20,30);
+
+
+
+// --------------------
+// STRINGS
+// --------------------
+
+
+var myString = "This is a string";
+
+// ESCAPE STRINGS
+var anotherString = "He said \"That's fine!\""
+console.log (anotherString);
+
+// LENGTH
+console.log (myString.length);
+
+// UPPERCASE
+console.log (myString.toUpperCase);
+
+// LOWERCASE
+console.log (myString.toLowerCase);
+
+// SPLIT (LIKE SUBSTITUTE)
+// SPLIT THE STRING AT EVERY SPACE, RETURNS AN ARRAY
+console.log (myString.split(" "));
+
+// INDEX OF (LIKE POSITION)
+// THIS IS CASE SENSITIVE
+// RETURNS -1 IF NOT FOUND
+myString = "Hi Jason";
+console.log (myString.indexOf("Jason"));
+
+
+
+// myString.slice(startPosition,endPosition);
+
+console.log ( myString.slice(3,8));
+// RETURNS "Jason"
+// STARTS THE SPLIT AFTER THE startPosition "Hi |Jason"
+
+// COMPARING IF STRINGS ARE EQUAL IS CASE SENSITIVE
+
+
+// --------------------
+// DATES
+// --------------------
+
+
 
 
 
