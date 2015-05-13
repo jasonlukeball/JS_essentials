@@ -326,16 +326,88 @@ console.log ( myString.slice(3,8));
 // COMPARING IF STRINGS ARE EQUAL IS CASE SENSITIVE
 
 
+
 // --------------------
 // DATES
 // --------------------
 
+// DATES ARE STORED IN MILLISECONDS FROM 01/01/1970
+
+var today = new Date();
+// RETURNS "Wed May 13 2015 21:11:28 GMT+1000 (AEST)"
+
+var anotherDate = new Date(2015,5,13);
+// RETURNS "Sat Jun 13 2015 00:00:00 GMT+1000 (AEST)"
+// WHY! MONTHS ARE 0 BASED LIKE ARRAYS, 0 = JAN, 5 = JUNE
+
+// GET DAY
+today.getDate();
+
+// GET MONTH
+today.getMonth();
+
+// GET YEAR
+today.getFullYear();
+
+// GET DAY OF WEEK (0 = SUNDAY)
+today.getDay();
+
+// GET HOUR
+today.getHours();
+
+// GET TIME (RETURNED IN MILLISECONDS - TIME SINCE 01/01/1970)
+today.getTime();
+
+// SET YEAR
+today.setFullYear(2020);
 
 
 
+// --------------------
+// OBJECTS
+// --------------------
+
+// OBJECTS ARE SIMPLY CONTAINERS
+
+// AS VARIABLES
+
+var firstName = "Jason";
+var lastName = "Ball";
+var age = 33;
 
 
+// AS AN OBJECT
+
+var person = new Object();      // EMPTY OBJECT
+
+// DEFINE PROPERTIES ON THE person OBJECT
+person.firstName = "Jason";
+person.lastName = "Ball";
+person.age = 33;
+
+// RETURNS KEY VALUE PAIR: "Object {firstName: "Jason", lastName: "Ball", age: 33}"
+
+// SHORTHAND FOR CREATING AN OBJECT
+var newPerson = { firstName: "Msh", lastname: "Lan", age: 28};
+
+// GET A PROPERTY FROM THE OBJECT
+console.log(newPerson.firstName);
+// RETURNS "Msh"
 
 
+// PLACING A METHOD INSIDE AN OBJECT
+// THINK THERE'S SOMETHING MISSING HERE...WHY NOT PASS THE OBJECT INTO THE FUNCTION?
 
+var person1 = { firstName: "Jason", lastname: "Ball", age: 33};
+var person2 = { firstName: "Msh", lastname: "Lan", age: 28};
+
+function personDetails() {
+    // DISPLAY INFORMATION ABOUT THE PERSON
+    console.log(this.firstName + " " + this.lastName);
+}
+// person1 object with logDetails method (which is the personDetails function)
+person1.logDetails = personDetails;
+
+person1.logDetails();
+person2.logDetails();
 
