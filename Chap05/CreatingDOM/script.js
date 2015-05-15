@@ -1,3 +1,4 @@
+
 // -----------------------------------------------------
 // CREATING DOM ELEMENTS
 // -----------------------------------------------------
@@ -22,16 +23,28 @@ document.getElementById("trivia").appendChild(newParagraph);
 
 
 
-// ADD A NEW <li> TO THE #homeNav UNORDERED LIST
+// -----------------------------------------------------
+// ADD A NEW <li> TO THE #quickNav UNORDERED LIST
+// -----------------------------------------------------
+
 
 // 1. GET THE ELEMENT THAT WE WANT TO INSERT A CHILD INTO
-var mainTitle = document.getElementById("homeNav");
+var quickNavUl = document.getElementById("quickNav");
 
-// 2. CREATE THE NEW <li>
+// 2. CREATE A NEW <li> ITEM TO INSERT
 var newLi = document.createElement("li");
 
-// 3. GIVE THE NEW <li> a VALUE
-newLi.innerHTML = "Testing 1,2,3";
+// 3. CREATE A NEW <a> TAG TO INSERT INTO THE <li>
+var newA = document.createElement("a");
 
-// 4. ADD NEW <li> TO THE DOCUMENT
-homeNav.appendChild(newLi);
+// 4. SET THE href VALUE FOR THE <a> TAG
+a.setAttribute('href', "http://www.msn.com");
+
+// 5. SET THE TEXT VALUE FOR THE <a> TAG
+a.textContent = "This is a new link!";
+
+// 6. ADD THE NEW <li> TO THE UNORDERED LIST
+quickNavUl.appendChild(newLi);
+
+// 7. ADD THE NEW <a> TO THE NEW <li>
+newLi.appendChild(newA);
