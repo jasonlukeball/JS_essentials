@@ -411,3 +411,23 @@ person1.logDetails = personDetails;
 person1.logDetails();
 person2.logDetails();
 
+
+
+// --------------------
+// ACCESSING THE DOM
+// --------------------
+
+// GET ELEMENT BY ID
+// THIS GETS THE WHOLE ELEMENT/NODE AND CHILD ELEMENT/NODES IT CONTAINS
+document.getElementById("someID");
+
+// EG
+var myElement = document.getElementById("someID");
+console.log ( myElement );
+
+// GET ELEMENTS BY TAG NAME
+// GETS ALL THE A HREF ELEMENTS AND THEIR CHILD ELEMENTS
+// RETURNS AN ARRAY
+document.getElementsByTagName("a");
+
+
