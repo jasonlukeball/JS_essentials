@@ -46,9 +46,3 @@ for (var i = 0; i < arrayLength; i++) {
     console.log(listItemsInFooterMenu[i]);
 }
 
-
-
-// -----------------------------------------------------
-// CHANGING DOM ELEMENTS
-// -----------------------------------------------------
-
