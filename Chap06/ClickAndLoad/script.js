@@ -1,17 +1,14 @@
 
+// window.onload
+// By default, it is fired when the entire page loads, including its content (images, css, scripts, etc.)
+
+// document.onload
+// It is called when the DOM is ready which can be prior to images and other external content is loaded.
 
 
-
-// ANY TIME YOU CLICK ANYWHERE ON THE DOCUMENT
- document.onclick = function() {
- 	alert("You clicked somewhere in the document");
- };
-
-
-// DO THIS AFTER THE WINDOW LOADS
-// GET ALL MY EVENT HANDLERS READY
+// DO THIS AFTER THE WINDOW COMPLETES LOADING (INCLUDING ALL EXTERNAL IMAGES AND CONTENT)
 window.onload = function() {
-    // prep anything we need to
+    // GET ALL MY EVENT HANDLERS READY
 	prepareEventHandlers();
 };
 
@@ -19,6 +16,7 @@ window.onload = function() {
 
 
 function prepareEventHandlers() {
+
 
     // -------------------------
     // MAIN IMAGE ONCLICK EVENT
@@ -31,6 +29,7 @@ function prepareEventHandlers() {
         // IF CLICKED
 		alert("You clicked the image");
 	};
+
 
     // -------------------------
     // TOP <H1> ONCLICK EVENT
@@ -47,7 +46,21 @@ function prepareEventHandlers() {
     firsth1.onclick = function() {
         // IF CLICKED
         alert("You clicked the h1 tag");
-    }
+    };
+
+
+    // -------------------------
+    // CLICK ANYWHERE ON THE DOCUMENT
+    // -------------------------
+    // ANY OTHER onclick EVENT WILL STILL FIRE THIS
+    // BECAUSE WE ARE STILL CLICKING ON THE DOCUMENT
+    document.onclick = function() {
+        alert("You clicked somewhere in the document");
+    };
+
+
 
 }
+
+
 
