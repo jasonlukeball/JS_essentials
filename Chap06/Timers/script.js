@@ -2,9 +2,9 @@
 
 // TIMES ARE IN MILLISECONDS
 
-// ------------------------------
-// setTimeout - SINGLE EVENT
-// ------------------------------
+// -------------------------------------
+// setTimeout - SINGLE EVENT (ONCE ONLY)
+// -------------------------------------
 
 function simpleMessage() {
 	alert("2 seconds has passed");
@@ -15,9 +15,9 @@ setTimeout(simpleMessage, 2000);
 
 
 
-// ------------------------------
+// --------------------------------------
 // setInterval - REPEATING EVENT
-// ------------------------------
+// --------------------------------------
 
 // GET THE MAIN IMAGE
 var myImage = document.getElementById("mainImage");
