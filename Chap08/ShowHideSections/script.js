@@ -3,7 +3,7 @@ function prepareHandlers() {
     // WHEN THE "brochures" CHECKBOX IS CLICKED/CHANGED
 	document.getElementById("brochures").onchange = function() {
 
-		if (document.getElementById("brochures").checked) {
+		if (document.getElementById("brochures").checked) {         // .checked IS A BOOLEAN RESULT
             // THE CHECKBOX IS CHECKED
             // SET THE STYLE "display" ATTRIBUTE WITH THE "block" PROPERTY
 			// THIS SHOWS THE "tourSelection" DIV
