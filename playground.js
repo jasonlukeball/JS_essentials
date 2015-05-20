@@ -431,3 +431,38 @@ console.log ( myElement );
 document.getElementsByTagName("a");
 
 
+// --------------------
+// JAVASCRIPT EVENTS
+// --------------------
+
+// onload       - ELEMENT WAS LOADED (EG window.onload or document.onload)
+
+// onclick      - ELEMENT WAS CLICKED
+// onfocus      - ON FIELD ENTER
+// onblur       - ON FIELD EXIT
+// onchange     - WHEN THE VALUE IN A FIELD CHANGES
+
+// onkeypress   - PRESS ANY KEY AND RELEASE IT
+// onkeydown    - WHEN A KEY IS PRESSED DOWN
+// onkeyup      - WHEN A PRESSED KEY IS RELEASED
+
+// onsubmit     - A FORM IS SUBMITTED
+
+
+
+// onkeypress event - PRESS ANY KEY AND RELEASE IT
+document.onkeypress = function() {
+    console.log("onkeypress fired")
+};
+
+
+// onkeydown event - WHEN A KEY IS PRESSED DOWN
+document.onkeydown = function() {
+    console.log("onkeydown fired")
+};
+
+
+// onkeyup event - WHEN A PRESSED KEY IS RELEASED
+document.onkeyup = function() {
+    console.log("onkeyup fired")
+};

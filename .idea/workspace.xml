@@ -25,21 +25,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.htm" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Chap07/UsingDebugger/index.htm">
+      <file leaf-file-name="contact.htm" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Chap08/PreventSubmission/contact.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="1275">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-4.901961" vertical-offset="140" max-vertical-offset="3450">
+              <caret line="26" column="76" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="script.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Chap07/UsingDebugger/script.js">
+        <entry file="file://$PROJECT_DIR$/Chap08/PreventSubmission/script.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5798005" vertical-offset="0" max-vertical-offset="802">
-              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.13092269" vertical-offset="0" max-vertical-offset="802">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="playground.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/playground.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="6248" max-vertical-offset="7050">
+              <caret line="433" column="23" selection-start-line="433" selection-start-column="23" selection-end-line="433" selection-end-column="23" />
               <folding />
             </state>
           </provider>
@@ -56,7 +68,6 @@
         <option value="$PROJECT_DIR$/Syntax/arrays.js" />
         <option value="$PROJECT_DIR$/apiGETSample.php" />
         <option value="$PROJECT_DIR$/apitest_smalldog.php" />
-        <option value="$PROJECT_DIR$/playground.js" />
         <option value="$PROJECT_DIR$/Chap05/AccessingDOM/script.js" />
         <option value="$PROJECT_DIR$/Chap05/ChangingDOM/index.htm" />
         <option value="$PROJECT_DIR$/Chap05/ChangingDOM/script.js" />
@@ -66,6 +77,9 @@
         <option value="$PROJECT_DIR$/Chap06/Timers/script.js" />
         <option value="$PROJECT_DIR$/Chap07/CommonErrors/script.js" />
         <option value="$PROJECT_DIR$/Chap07/UsingDebugger/script.js" />
+        <option value="$PROJECT_DIR$/Chap08/PreventSubmission/contact.htm" />
+        <option value="$PROJECT_DIR$/Chap08/PreventSubmission/script.js" />
+        <option value="$PROJECT_DIR$/playground.js" />
       </list>
     </option>
   </component>
@@ -129,11 +143,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chap07" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="UsingDebugger" />
+              <option name="myItemId" value="Chap08" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -147,25 +157,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Chap07" />
+              <option name="myItemId" value="Chap08" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Firebug" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lynda_JS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lynda_JS" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Chap07" />
+              <option name="myItemId" value="PreventSubmission" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -422,16 +418,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/playground.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2040" max-vertical-offset="6585">
-          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="153" selection-end-column="1" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Chap05/ChangingDOM/script.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.037406486" vertical-offset="0" max-vertical-offset="802">
@@ -484,14 +470,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="780">
           <caret line="40" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Chap06/ClickAndLoad/script.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.234414" vertical-offset="0" max-vertical-offset="1080">
-          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -568,6 +546,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Chap07/UsingDebugger/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5798005" vertical-offset="0" max-vertical-offset="802">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Chap07/UsingDebugger/index.htm">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1275">
@@ -576,11 +562,37 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Chap07/UsingDebugger/script.js">
+    <entry file="file://$PROJECT_DIR$/Chap08/PreventSubmission/contact.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5798005" vertical-offset="0" max-vertical-offset="802">
-          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+        <state vertical-scroll-proportion="-4.901961" vertical-offset="140" max-vertical-offset="3450">
+          <caret line="26" column="76" selection-start-line="26" selection-start-column="70" selection-end-line="26" selection-end-column="76" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chap06/ClickAndLoad/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1080">
+          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/playground.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6248" max-vertical-offset="7050">
+          <caret line="433" column="23" selection-start-line="433" selection-start-column="23" selection-end-line="433" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Chap08/PreventSubmission/script.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13092269" vertical-offset="0" max-vertical-offset="802">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

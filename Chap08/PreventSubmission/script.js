@@ -1,8 +1,21 @@
+// GET AN ENTIRE FORM
+// document.form.formID
 
-// handle the form submit event
+// GET ANY FORM ELEMENT (INPUT FIELD, SUBMIT BUTTON)
+// document.form.formID.elementID
+
+
+
+
+
+
+
+// HANDLE THE FORM SUBMIT EVENT
 function prepareEventHandlers() {
+    // WHEN THE SUBMIT BUTTON IS CLICKED
 	document.getElementById("frmContact").onsubmit = function() {
-		// prevent a form from submitting if no email.
+		// PREVENT FORM FROM BEING SUBMITTED IF EMAIL IS BLANK
+
 		if (document.getElementById("email").value == "") {
 			document.getElementById("errorMessage").innerHTML = "Please provide at least an email address!";
 			// to STOP the form from submitting
@@ -15,7 +28,7 @@ function prepareEventHandlers() {
 	};
 }
 
-// when the document loads
+// WHEN THE WINDOW FINISHES LOADING - SETUP EVENT HANDLERS
 window.onload =  function() {
 	prepareEventHandlers();
 };
