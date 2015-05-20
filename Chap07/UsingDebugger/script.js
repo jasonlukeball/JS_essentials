@@ -17,6 +17,7 @@ function simpleFunction() {
     if (messageIndex == messageArray.length) {
         messageIndex = 0;
     }
+
     // GET A MESSAGE FROM THE ARRAY
 	var newMessage = messageArray[messageIndex];
     // GET THE ELEMENT TO UPDATE
