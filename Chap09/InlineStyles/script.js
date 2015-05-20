@@ -2,29 +2,34 @@ var currentPos = 0;
 var intervalHandle;
 
 function beginAnimate() {
+    // SET START POSITION OF THE <join> DIV
 	document.getElementById("join").style.position = "absolute";
 	document.getElementById("join").style.left = "0px";
     document.getElementById("join").style.top = "100px";
-    // cause the animateBox function to be called
+    // CALL THE "animateBox" FUNCTION EVERY 50ms
     intervalHandle = setInterval(animateBox,50);
 }
 
 function animateBox() {
-    // set new position
+    // CALCULATE NEW POSITION
     currentPos+=5;
+    // SET NEW POSITION
     document.getElementById("join").style.left = currentPos + "px";
-    // 
+
     if ( currentPos > 900) {
-        // clear interval
+        // STOP animateBox FUNCTION FROM REPEATING
         clearInterval(intervalHandle);
-        // reset custom inline styles
+        // RESET STYLES
         document.getElementById("join").style.position = "";
         document.getElementById("join").style.left = "";
         document.getElementById("join").style.top = "";
     }
+
+
 }
 
 window.onload =  function() {
-	setTimeout(beginAnimate,5000);
+    // BEGIN ANIMATION IN 1 SECOND
+	setTimeout(beginAnimate,1000);
 };
 
