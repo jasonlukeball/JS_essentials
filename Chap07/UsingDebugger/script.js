@@ -1,30 +1,39 @@
-var messageArray = ["The true heart of California","Tours as diverse as California itself","Explore our world your way"];
+
+
+
+// CREATE MESSAGE ARRAY
+var messageArray = [    "Message[0] - You",
+                        "Message[1] - Are",
+                        "Message[2] - Rockin",
+                        "Message[3] - It"];
+
+
+// INITIALIZE INDEX TO ZERO
 var messageIndex = 0;
 
+
+
 function deeperFunction() {
-	// perform loop
+    // THIS FUNCTION IS JUST TO PERFORM A LOOP 500 TIMES
+	// EACH ITERATION STARTS THEN CONTINUES THE SIMPLE FUNCTION LOGIC
 	for (var i = 0; i < 500; i++) {
 		// do stuff.
 		var foo = i * (Math.random());
 		var bar = foo;
-		// more exciting code.
+		// CONTINUE SIMPLE FUNCTION
 	}
 }
 
+
+
 function simpleFunction() {
-	// jump into a deeper function
+    // JUMP INTO THE DEEPER FUNCTION (JUST HANDLES THE LOOP)
 	deeperFunction();
-
-
-
-
-
     // IF WE'VE REACHED THE LAST MESSAGE IN THE ARRAY,
     // RESTART FROM THE FIRST
     if (messageIndex == messageArray.length) {
         messageIndex = 0;
     }
-    
     // GET A MESSAGE FROM THE ARRAY
 	var newMessage = messageArray[messageIndex];
     // GET THE ELEMENT TO UPDATE
@@ -33,15 +42,14 @@ function simpleFunction() {
 	messageElement.innerHTML = newMessage;
     // INCREMENT THE INDEX
 	messageIndex++;
-
 }
 
-function changeMessage() {
-	simpleFunction();
-}
+
 
 window.onload = function() {
-	setInterval(changeMessage,1000);
+    // AFTER THE WINDOW AND ALL DEPENDENCIES HAVE COMPLETELY LOADED
+    // CALLS SIMPLE FUNCTION EVERY 1 SECOND
+	setInterval(simpleFunction,1000);
 };
 
 
