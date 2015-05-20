@@ -1,6 +1,4 @@
 
-
-
 // CREATE MESSAGE ARRAY
 var messageArray = [    "Message[0] - You",
                         "Message[1] - Are",
@@ -12,23 +10,8 @@ var messageArray = [    "Message[0] - You",
 var messageIndex = 0;
 
 
-
-function deeperFunction() {
-    // THIS FUNCTION IS JUST TO PERFORM A LOOP 500 TIMES
-	// EACH ITERATION STARTS THEN CONTINUES THE SIMPLE FUNCTION LOGIC
-	for (var i = 0; i < 500; i++) {
-		// do stuff.
-		var foo = i * (Math.random());
-		var bar = foo;
-		// CONTINUE SIMPLE FUNCTION
-	}
-}
-
-
-
 function simpleFunction() {
-    // JUMP INTO THE DEEPER FUNCTION (JUST HANDLES THE LOOP)
-	deeperFunction();
+
     // IF WE'VE REACHED THE LAST MESSAGE IN THE ARRAY,
     // RESTART FROM THE FIRST
     if (messageIndex == messageArray.length) {
@@ -51,5 +34,3 @@ window.onload = function() {
     // CALLS SIMPLE FUNCTION EVERY 1 SECOND
 	setInterval(simpleFunction,1000);
 };
-
-
