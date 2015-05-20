@@ -1,19 +1,25 @@
 // show and hide sections of a form
-function preparePage() {
-	document.getElementById("brochures").onclick = function() {
+function prepareHandlers() {
+    // WHEN THE "brochures" CHECKBOX IS CLICKED/CHANGED
+	document.getElementById("brochures").onchange = function() {
+
 		if (document.getElementById("brochures").checked) {
-			// use CSS style to show it
+            // THE CHECKBOX IS CHECKED
+            // SET THE STYLE "display" ATTRIBUTE WITH THE "block" PROPERTY
+			// THIS SHOWS THE "tourSelection" DIV
 			document.getElementById("tourSelection").style.display = "block";
+
 		} else {
-			// hide the div
+            // THE CHECKBOX IS UNCHECKED
+            // HIDE THE "tourSelection"  DIV
 			document.getElementById("tourSelection").style.display = "none";
 		}
 	};
-	// now hide it on the initial page load.
+	// HIDE THE "tourSelection" DIV BE DEFAULT WHEN THE PAGE LOADS
 	document.getElementById("tourSelection").style.display = "none";
 }
 
 window.onload =  function() {
-	preparePage();
+	prepareHandlers();
 };
 

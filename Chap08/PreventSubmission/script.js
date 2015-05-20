@@ -5,11 +5,6 @@
 // document.form.formID.elementID
 
 
-
-
-
-
-
 // HANDLE THE FORM SUBMIT EVENT
 function prepareEventHandlers() {
     // WHEN THE SUBMIT BUTTON IS CLICKED
@@ -17,11 +12,13 @@ function prepareEventHandlers() {
 		// PREVENT FORM FROM BEING SUBMITTED IF EMAIL IS BLANK
 
 		if (document.getElementById("email").value == "") {
+            // SET AN ERROR MESSAGE IN THE #errorMessage TAG
 			document.getElementById("errorMessage").innerHTML = "Please provide at least an email address!";
-			// to STOP the form from submitting
+			// TO STOP THE FORM FROM SUBMITTING
 			return false;
 		} else {
-			// reset and allow the form to submit
+			// CONTINUE WITH FORM SUBMISSION
+            // REMOVE THE ERROR MESSAGE (NOT NECESSARY)
 			document.getElementById("errorMessage").innerHTML = "";
 			return true;
 		}
