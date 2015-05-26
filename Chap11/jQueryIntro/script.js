@@ -30,7 +30,7 @@ jQuery("p:contains('packages')").addClass("highlightRed");
 // ------------------------
 
 // HIDE ALL PARAGRAPHS, DURATION 1 SECOND
-$("p").hide(1000);
+// $("p").hide(1000);
 
 //FADE OUT ALL <h2> TAGS, DURATION 2 SECOND
 // $("h2").fadeOut(2000);
@@ -55,18 +55,20 @@ $("h2").click(function() {
    $(this).text("You clicked me!");
 });
 
+// CLICK EVENT ON ALL <p> TAGS
+$("p").click(function() {
+    // WHEN CLICKED, FADE OUT OVER 2 SECONDS
+  $(this).fadeOut(2000);
+});
 
-// add effects - this makes each paragraph fade out when clicked.
-//$("p").click(function() {
-//  $(this).fadeOut(2000);
-//});
+// PAGE/WINDOW LOAD EVENT
+$(document).ready(function () {
+    // WHEN THE DOCUMENT IS FULLY LOADED, CHANGE THE TEXT OF THE "#pageID" <h1> TO "The DOM is fully loaded."
+  $("#pageID").text("The DOM is fully loaded.");
+});
 
-// Page load events - instead of window.onload()
-//$(document).ready(function () {
-//  $("#pageID").text("The DOM is fully loaded.");
-//});
-
-// you don't have to worry about accidentally calling it multiple times.
-//$(document).ready(function () {
-//   $("h1").css("color","red");
-//});
+// PAGE/WINDOW LOAD EVENT
+$(document).ready(function () {
+    // ADD RED COLOR TO THE "#pageID" <h1> TAG
+   $("#pageID").css("color","red");
+});
