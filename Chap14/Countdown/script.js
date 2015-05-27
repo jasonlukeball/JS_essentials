@@ -50,15 +50,20 @@ function startCountdown() {
 }
 
 // as soon as the page is loaded...
+// create element and add them to the DOM
 window.onload =  function () {
     // create input text box and give it an id of "minutes"
     var inputMinutes = document.createElement("input");
     inputMinutes.setAttribute("id", "minutes");
     inputMinutes.setAttribute("type", "text");
+    inputMinutes.setAttribute("placeholder", "Enter Minutes");
+    console.log(inputMinutes);
     // create a button
     var startButton = document.createElement("input");
     startButton.setAttribute("type", "button");
     startButton.setAttribute("value", "Start Countdown");
+    console.log(startButton);
+    // give the button click behaviour
     startButton.onclick = function () {
         startCountdown();
     };
