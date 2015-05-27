@@ -2,6 +2,7 @@
   <dictionary name="jason_ball">
     <words>
       <w>aest</w>
+      <w>onload</w>
       <w>onreadystatechange</w>
     </words>
   </dictionary>
