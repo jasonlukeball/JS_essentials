@@ -9,9 +9,11 @@ var myRequest;
 // TELLS SPECIFICALLY WHAT TYPE OF REQUEST OBJECT TO USE
 
 if (window.XMLHttpRequest) {
+    // DOES THIS BROWSER HAVE THE XMLHttpRequest OBJECT?
     // code for IE7+, Firefox, Chrome, Opera, Safari
     myRequest=new XMLHttpRequest();
     } else {
+    // DOES THIS BROWSER HAVE THE ActiveXObject OBJECT?
     // code for IE6, IE5
     myRequest=new ActiveXObject("Microsoft.XMLHTTP");
 }
@@ -19,6 +21,7 @@ if (window.XMLHttpRequest) {
 
 // TELL THE REQUEST WHAT TO DO
 myRequest.open("GET","simple.txt",true);
+// myRequest.open("GET","http://www.mysite.com/somedata.php",true);
 
 // SEND THE REQUEST
 // AFTER THE REQUEST COMES BACK THIS WILL CALLBACK THE myRequest.onreadystatechange
