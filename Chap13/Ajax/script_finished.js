@@ -1,5 +1,9 @@
 // Simple Ajax example.
 
+// 1. CREATE A REQUEST
+// 2. HANDLE THE RESPONSE
+
+
 // 1: Create the request 
 var myRequest;
 
@@ -28,3 +32,4 @@ myRequest.open('GET', 'simple.txt', true);
 myRequest.send(null);
 
 //....
+

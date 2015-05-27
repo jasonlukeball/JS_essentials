@@ -1,3 +1,7 @@
+// USE JAVASCRIPT STRICT MODE
+// MORE ERRORS WILL APPEAR IN CONSOLE, HIGHLIGHTING "INCORRECT" SYNTAX
+"use strict";
+
 
 // didn't use var
 foo = "Hello world";
